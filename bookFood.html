@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- my css -->
+ <link href="bookFoodCSS.css" rel="stylesheet" type="text/css">
+ 
+ <title>ספר המתכונים</title>
+ </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">הבית של משפחת חדד</a>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link " href="index.html">בית</a>
+      <a class="nav-item nav-link active" href="#">ספר המתכונים של דינה</a>
+      <a class="nav-item nav-link" href="photoAlbum.html">אלבום תמונות</a>
+      <a class="nav-item nav-link" href="familyStory.html">סיפור המשפחה</a>
+	  <a class="nav-item nav-link" href="creator.html">יוצר האתר</a>
+    </div>
+  </div>
+</nav>
+  
+  <div class ="container">
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <button onclick="button_prev_page_click()" id="prevButton" class="btn btn-info">לדף הקודם</button>
+        </div>
+		
+		<div class="col-6 RTL">
+         
+        </div>
+		
+         <div class="col-2">
+            <button onclick="button_next_page_click()" id= "nextButton "class="btn btn-info">לדף הבא</button>
+        </div>
+    </div>
+	<div class="row RTL">
+	<div class="col-1"></div>
+	
+	<div class="col-11">
+	   <p><u class="title mainName">שם המנה:</u>
+			
+		<span id = "foodName" class="data dataTitle" > </span></p>
+	</div>
+	</div>
+
+    <div class="row">
+        <div class="col-5">
+            <p id = "outPic1" class="pic data"><img id= "pic1" class="image"></p>
+        
+            <p id = "outPic2" class="pic data"><img id= "pic2" class="image"></p>
+        
+        </div>
+
+         <div class="col-1"></div>
+
+        <div class="col-5">
+			<div class="RTL">
+			  <button class="btn btn-light RTL title" onclick="openTab('ingredients')">מצרכים:</button>
+			  <button class="btn btn-light RTL title" onclick="openTab('action')">אופן הכנה:</button>
+			  <button class="btn btn-light RTL title" onclick="openTab('video')">סרטון:</button>
+			</div>
+			<div class="RTL">
+				<hr>
+			</div>
+      
+              <ul id="ingredients" class="data content RTL">
+              </ul>
+			
+              <ol id="action" class="data content RTL">
+              </ol>
+			  
+			  <video id="video" class="data content RTL" controls>
+				<source src = "1.mp4" type="video/mp4">
+				</video>
+        </div>
+
+
+
+     </div>
+    </div>
+
+<script type= "text/javascript" src="bookFoodJS.js"></script>
+</body>
+</html>

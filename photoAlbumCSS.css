@@ -1,0 +1,51 @@
+﻿
+body {
+
+	  /* The image used */
+  background-image: url("photoAlbum/backImage.jpg");
+
+/* Full height 
+ height: 100%; 
+*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-attachment: fixed;
+}
+
+.downPIC {
+	margin-top: 3%;
+}
+
+.upPIC {
+	margin-top: 1%;
+}
+
+.first-row {
+justify-content: center;
+}
+
+#pageNumber {
+justify-content: center;
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 18px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #DDDDDD;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+.fas {
+color: #DAD8D8;
+
+}
+
+.img-thumbnail{
+   /*transform: rotate(90deg);*/
+
+}

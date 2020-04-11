@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- icons library -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- my css -->
+ <link href="photoAlbumCSS.css" rel="stylesheet" type="text/css">
+
+	<title>אלבום תמונות</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">הבית של משפחת חדד</a>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link " href="index.html">בית</a>
+      <a class="nav-item nav-link" href="bookFood.html">ספר המתכונים של דינה</a>
+      <a class="nav-item nav-link active" href="#">אלבום תמונות</a>
+      <a class="nav-item nav-link" href="familyStory.html">סיפור המשפחה</a>
+	  <a class="nav-item nav-link" href="creator.html">יוצר האתר</a>
+    </div>
+  </div>
+</nav>
+  
+  <div class ="container">
+  <div class="row" id="pageNumber"></div>
+  
+  	<div class="row first-row">
+	<i type="button" class="fas fa-arrow-alt-circle-left fa-3x" id="prevPic"></i>
+		<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+			<button type="button" class="btn btn-secondary myButton" id="1">1</button>
+			<button type="button" class="btn btn-secondary myButton" id="2">2</button>
+		</div>
+		
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			בחר עמוד</button>
+			
+			<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				<button class="dropdown-item myButton" type="button" id="3">3</button>
+				<button class="dropdown-item myButton" type="button" id= "4">4</button>
+				<button class="dropdown-item myButton" type="button" id="5">5</button>
+				<button class="dropdown-item myButton" type="button" id= "6">6</button>
+				<button class="dropdown-item myButton" type="button" id="7">7</button>
+				<button class="dropdown-item myButton" type="button" id= "8">8</button>
+				<button class="dropdown-item myButton" type="button" id="9">9</button>
+				<button class="dropdown-item myButton" type="button" id= "10">10</button>
+				<button class="dropdown-item myButton" type="button" id= "11">11</button>
+				<button class="dropdown-item myButton" type="button" id= "12">12</button>
+				<button class="dropdown-item myButton" type="button" id="13">13</button>
+				<button class="dropdown-item myButton" type="button" id="14">14</button>
+				<button class="dropdown-item myButton" type="button" id= "15">15</button>
+				<button class="dropdown-item myButton" type="button" id= "16">16</button>
+				<button class="dropdown-item myButton" type="button" id= "17">17</button>
+				<button class="dropdown-item myButton" type="button" id="18">18</button>
+			</div>
+		</div>
+		
+		<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+			<button type="button" class="btn btn-secondary myButton" id="19">19</button>
+			<button type="button" class="btn btn-secondary myButton" id="20">20</button>
+		</div>
+		<i type="button" class="fas fa-arrow-alt-circle-right fa-3x" id="nextPic"></i>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4 col-md-6 upPIC" ><img class="img-thumbnail" id="pic1"></div>
+		<div class="col-lg-4 col-md-6 upPIC" ><img class="img-thumbnail" id="pic2"></div>
+		<div class="col-lg-4 col-md-6 upPIC" ><img class="img-thumbnail" id="pic3"></div>
+		<div class="col-lg-4 col-md-6 downPIC" ><img class="img-thumbnail" id="pic4"></div>
+		<div class="col-lg-4 col-md-6 downPIC" ><img class="img-thumbnail" id="pic5"></div>
+		<div class="col-lg-4 col-md-6 downPIC" ><img class="img-thumbnail" id="pic6"></div>
+	</div>
+
+  
+  </div>
+
+<script type= "text/javascript" src="photoAlbumJS.js"></script>
+</body>
+</html>
